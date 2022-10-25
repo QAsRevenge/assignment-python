@@ -1,0 +1,47 @@
+@import '_libs/css/bootstrap.min.css';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#dealerSum {
+  text-align: center;
+}
+
+#player1Sum {
+  text-align: left;
+}
+
+#player2Sum {
+  text-align: center;
+}
+
+#player3Sum {
+  text-align: right;
+}
+
+.alert {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.alert * {
+  margin: 0;
+}
+
+input.text-light::placeholder {
+  color: #eee !important;
+}
+
+.right {
+  transition: margin-left 0.5s;
+  margin-left: 50%;
+  text-align: right;
+}
+
+.right input {
+  text-align: right;
+}
