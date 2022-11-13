@@ -251,7 +251,7 @@ def initialize_game():
     global player2_aces
     global player_hand
     global player2_hand
-    alert("Welcome to blackjack!\nDealer hits on all 17s\nPush = Tie\nCan't get ace adjustment to work... ")
+    alert("Welcome to blackjack!\nDealer hits on all 17s\nPush = Tie\nAce adjustment is wonky\n Can't figure out network functionality for two (or more) players... ")
     deal_hidden()
     print(dealer_hidden)
     dealer_total += get_value(dealer_hidden)
