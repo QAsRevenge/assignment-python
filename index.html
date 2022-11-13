@@ -7,27 +7,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
-  <title>Blackjack!</title>
+  <title>Blackjack</title>
 </head>
 
-<body class="bg-white text-dark">
-  <h2 id="dealerSum">Dealer: <span class="dealerSum"></span></h2>
-  <div class="dealerCards"></div>
+<body>
+  <div>
+    <h2 id="dealer"><span id="dealer-total"></span></h2>
+    <div id="dealer-cards">
+    </div>
+  </div>
 
-  <h5 id="player1Sum" >Player 1:</h5>
-  <div class="player1Cards"></div>
+  <h2 style="float: left" id="player1"><span id="player-total"></span></h2>
+  <h2 style="float: right" id="player2"><span id="player2-total"></span></h2>
 
-  <h5 id="player2Sum">Player 2: <span class="player2Sum"></span></h5>
-  <div class="player2Cards"></div>
-
-  <h5 id="player3Sum">Player 3: <span class="player3Sum"></span><h5>
-  <div class="player3Cards"></div>
+  <div class="container">
+    <div id="player-cards"></div>
+    <div id="player2-cards"></div>
+  </div>
 
   <br>
-  <button class="hit">Hit</button>
-  <button class="stay">Stay</button>
-  <main class="container"></main>
-  <script type="text/python" src="/blackjack.py"></script>
+
+  <div class="buttons">
+    <button id="deal-button">Deal</button>
+    <button id="hit-button">Hit</button>
+    <button id="stay-button">Stay</button>
+  </div>
+  <script type="text/python" src="/brackrackthree.py"></script>
   <script src="/_libs/js/start.js"></script>
 </body>
 
