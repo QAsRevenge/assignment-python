@@ -165,30 +165,8 @@ def stay(event):
         game_message = 'You lose'
     pass
 
-    alert(game_message)
+    alert(game_message + ". Hit Deal to refresh page and go again")
     
-
-def restart_game(event):
-    global player_hand
-    global dealer_hand
-    global player2_hand
-    player_hand = []
-    dealer_hand = []
-    player2_hand = []
-    element = doc.getElementById("hidden-card")
-    element.remove()
-    elemen = doc.getElementById("card-id")
-    elemen.remove()
-    eleme = doc.getElementById("player1-cards")
-    eleme.remove()
-    elem = doc.getElementById("player-2-cards")
-    elem.remove()
-    ele = doc.getElementById("player1-cards2")
-    eleme.remove()
-    el = doc.getElementById("player-2-cards2")
-    el.remove()
-
-    initialize_game()
 
 
 def deal_hidden():
@@ -273,7 +251,7 @@ def initialize_game():
     global player2_aces
     global player_hand
     global player2_hand
-    alert("Welcome to blackjack!\nDealer hits on all 17s\nPush = Tie\nCan't get ace adjustment to work... :(")
+    alert("Welcome to blackjack!\nDealer hits on all 17s\nPush = Tie\nCan't get ace adjustment to work... ")
     deal_hidden()
     print(dealer_hidden)
     dealer_total += get_value(dealer_hidden)
@@ -293,7 +271,7 @@ def initialize_game():
     deal_player2()
     doc.getElementById("hit-button").addEventListener("click", hit)
     doc.getElementById("stay-button").addEventListener("click", stay)
-    doc.getElementById("deal-button").addEventListener("click", restart_game)
+  
 
 
 window.onload = build_deck(), shuffle_deck(), initialize_game()
